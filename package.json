@@ -5,9 +5,10 @@
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
-    "deploy": "hexo deploy",
+    "deploy": "hexo clean && hexo generate && hexo deploy",
     "server": "hexo server",
-    "one": "git add . && git commit -m 'update' && npm run clean && npm run build && npm run deploy"
+    "push": "git add . && git commit -m 'update' && git push",
+    "one": "yarn push && yarn deploy"
   },
   "hexo": {
     "version": "5.3.0"
