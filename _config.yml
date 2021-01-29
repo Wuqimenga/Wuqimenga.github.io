@@ -97,10 +97,11 @@ ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: landscape
+## Themes: https://hexo.io/themes/theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  respository: git@github.com:Wuqimenga/Wuqimenga.github.io.git
+  branch: master
